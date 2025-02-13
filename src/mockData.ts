@@ -17,7 +17,7 @@ export const articleCategory = ["Адабы",
     "Хадж",
     "Хадисы",
     "Халяль"]
-export const mockSidebarGroup=  Array.from({length: 8}, (_, index) => index).map(el=>({
+export const mockSidebarGroup=  Array.from({length: 8}, (_, index) => index).map(()=>({
     title:"Арабский язык",
     categoryCount: 72,
     articleCount: 920,

@@ -44,7 +44,7 @@ export default function Home() {
                             icon={'/faith.svg'}
                         />
                         <div className={styles.itemsBlock}>
-                            {mockSidebarGroup.map((item, index) =>
+                            {mockSidebarGroup.map((item) =>
                                 <div>
                                     <CategoryTitle item={item} key={item.title} icon={'/arabic.svg'}/>
                                     {item.categories.map((itemCategory, index) =>

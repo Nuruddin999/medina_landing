@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./search.module.scss"
 import Image from "next/image";
 
-const SearchBar: React.FC<any> = ({value, setValue, ...props}) => {
+const SearchBar: React.FC<any> = ({value, setValue}) => {
 
     return<div className={styles.searchContainer}>
 

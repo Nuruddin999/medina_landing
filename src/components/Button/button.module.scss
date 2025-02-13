@@ -1,0 +1,13 @@
+.customButton {
+  box-sizing: border-box;
+  display: block;
+  background: $brandPrimary;
+  padding: 10px 24px;
+  border-radius: 100px;
+  @include card-title;
+  font-size: 17px;
+  color: $white;
+  line-height: 28px;
+  cursor: pointer;
+
+}

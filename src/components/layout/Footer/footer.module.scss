@@ -1,0 +1,78 @@
+.footer {
+background: $white;
+  margin-top: 72px;
+  .footerWrapper {
+    @include centered;
+    display: flex;
+    align-items: initial;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    gap: 0 72px;
+
+    .about {
+      font-family: HelveticaNeueLight, sans-serif;
+      font-size: 18px;
+      line-height: 21.47px;
+
+      .footerLogo {
+        margin-bottom: 9px;
+      }
+
+      div {
+        margin-top: 12px;
+
+        a {
+          display: block;
+          text-decoration: underline;
+        }
+      }
+
+
+    }
+
+    .academy {
+      font-family: HelveticaNeueLight, sans-serif;
+      font-size: 16px;
+      line-height: 19.84px;
+
+      a {
+        display: block;
+        margin-top: 14px;
+      }
+
+      div {
+        &:first-child {
+          margin-top: 0px;
+          font-family: GteestiProDisplayMedium, sans-serif;
+          font-size: 18px;
+          line-height: 25.2px;
+        }
+      }
+    }
+
+
+    .social {
+      font-family: GteestiProDisplayMedium, sans-serif;
+      font-size: 18px;
+      line-height: 25.2px;
+
+      .mediaIcons {
+        margin-top: 20px;
+        display: flex;
+        gap: 12px;
+      }
+
+      .stores {
+        margin-top: 18px;
+      }
+    }
+  }
+  @media screen and (min-width: 1920px) {
+    .footerWrapper {
+      width: 1920px;
+      padding-right: 264px;
+      padding-left: 264px;
+      margin: 0 auto;
+    }
+  }
+}

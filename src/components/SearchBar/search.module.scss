@@ -1,0 +1,33 @@
+.searchContainer {
+  position: relative;
+  width: 100%;
+
+  input {
+    border: none;
+    width: 100%;
+    padding: 16px 0 16px 24px;
+    outline: none;
+    border-radius: 108px;
+    box-shadow: 1px 1px $greyBG;
+    font-family: GteestiProDisplayLight, sans-serif;
+    font-size: 18px;
+    line-height: 23.76px;
+    color: $mainText;
+
+  }
+
+  .icon {
+    position: absolute;
+    top: calc(50% - 22px);
+    right: 8px;
+    background: $greyBG;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+  }
+}

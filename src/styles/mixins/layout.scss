@@ -1,0 +1,6 @@
+@mixin centered {
+    box-sizing: border-box;
+    padding: 16px 13.75%;
+    display: flex;
+    align-items: center;
+}

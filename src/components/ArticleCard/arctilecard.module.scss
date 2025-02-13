@@ -1,0 +1,47 @@
+@mixin radiusBorders {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.articleCard {
+  width: 100%;
+  padding-bottom: 16px;
+@include radiusBorders;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: $white;
+
+  .imgSide {
+    background-image: url("/testbackground.png");
+    height: 212px;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include radiusBorders;
+  }
+
+.textBlock {
+  margin: 12px 20px 0;
+  .title {
+    @include card-title;
+    font-size: 24px;
+    line-height: 26.88px;
+  }
+
+  .description {
+    margin: 8px 0 16px 0;
+    @include card-text;
+    font-size: 16px;
+    line-height: 20.48px;
+  }
+}
+
+
+    .readButton {
+      font-family: 'GteestiProDisplay', sans-serif;
+      font-size: 16px;
+      line-height: 19.84px;
+      color: $brandPrimary;
+      cursor: pointer;
+    }
+}

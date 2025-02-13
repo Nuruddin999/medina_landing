@@ -1,95 +1,64 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client"
+
+import ArticleCard from "@/components/ArticleCard/ArticleCard";
+import styles from "./page.module.scss";
+import SearchBar from "@/components/SearchBar/SearchBar";
+import {useState} from "react";
+import {mockSidebarGroup} from "@/mockData";
+import CategoryTitle from "@/components/CategoryTitle/CategoryTitle";
+import Button from "@/components/Button/Button";
+import ArticleBanner from "@/components/ArticleBanner/ArticleBanner";
+import GridBanner from "@/components/GridBanner/GridBanner";
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    const itemsTest = Array.from({length: 38}, (_, index) => index);
+    const [searchValue, setSearchValue] = useState("");
+    return (
+        <div className={styles.mainPage}>
+            <div className={styles.searchBlock}>
+                <SearchBar value={searchValue} setValue={setSearchValue}/>
+            </div>
+            <div className={styles.content}>
+                <div className={styles.leftSide}>
+                    <ArticleBanner img={'/IslamAppear.png'} title={'История возникновения Ислама'}
+                                   text={'Краткое описание о чем данная статья чтобы было понятно о чем будет идти речь, касаемо всех аспектов этого большого события'}/>
+                    {itemsTest.map((item, index) => index === 6 || (((index - 6) % 7) === 0) ? <div>
+                        <GridBanner title={'Таджвид: искусство правильного чтения Корана'}
+                                    text={'Краткое описание о чем данная статья чтобы было понятно о чем будет идти речь, касаемо всех аспектов этого большого события'}
+                                    labelText={'Онлайн занятия'}
+                                    imgUrl={'/Tajweed.png'}
+                        />
+                    </div> : <div className={styles.cardContainer}>
+                        <ArticleCard/>
+                    </div>)}
+                    <div className={styles.moreButton}>
+                        <Button className={styles.showMore}>Показать еще</Button>
+                    </div>
+                </div>
+                <div className={styles.sideBarSide}>
+                    <div className={styles.sideBar}>
+                        <CategoryTitle
+                            item={{title: "Все рубрики", articleCount: 92, categoryCount: 750}}
+                            className={styles.categoryItemTitle}
+                            topTitleStyle={styles.topTitleStyle}
+                            icon={'/faith.svg'}
+                        />
+                        <div className={styles.itemsBlock}>
+                            {mockSidebarGroup.map((item, index) =>
+                                <div>
+                                    <CategoryTitle item={item} key={item.title} icon={'/arabic.svg'}/>
+                                    {item.categories.map((itemCategory, index) =>
+                                        <div key={itemCategory + index} className={styles.categoryName}>
+                                            {itemCategory}
+                                        </div>)}
+                                </div>)}
+                        </div>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+                    </div>
+
+                </div>
+            </div>
+            {/*<Button className={styles.showMore}>Показать еще</Button>*/}
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    );
 }

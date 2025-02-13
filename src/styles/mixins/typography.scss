@@ -1,0 +1,16 @@
+@mixin card-title {
+  font-family: GteestiProDisplayMedium, sans-serif;
+  color: $mainText;
+}
+
+@mixin card-text {
+  font-family: HelveticaNeueRoman, sans-serif;
+  color: $description;
+}
+
+@mixin button-text{
+  font-family: GteestiProDisplayMedium, sans-serif;
+  font-size: 16px;
+  line-height: 19.84px;
+  text-align: center;
+}

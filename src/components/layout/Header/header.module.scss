@@ -1,0 +1,54 @@
+.header {
+  background: $white;
+  box-sizing: border-box;
+
+  .mainWrapper {
+  @include centered;
+
+    .logo {
+      .logoTitle {
+
+      }
+    }
+
+    .menuItems, .buttons {
+      display: flex;
+    }
+
+    .buttons {
+      margin-left: auto;
+      .loginButton {
+        margin-right: 16px;
+        display: flex;
+        align-items: center;
+        background: $lightGreen;
+        @include card-title;
+        color: $darkGreen;
+        line-height: 22.32px;
+        gap: 6px;
+        span {
+          display: inline-block;
+          margin-top: 3px;
+        }
+      }
+    }
+    .menuItems {
+      margin-left: 16px;
+      gap: 16px;
+      a {
+        font-family: 'GteestiProDisplay', sans-serif;
+        font-size: 18px;
+        text-decoration: none;
+        color: $mainText;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1920px) {
+    .mainWrapper {
+      width: 1920px;
+      padding: 16px 264px;
+      margin: 0 auto;
+    }
+  }
+}

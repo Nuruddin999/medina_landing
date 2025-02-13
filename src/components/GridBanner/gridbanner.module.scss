@@ -1,0 +1,52 @@
+.gridBanner {
+  width: 116%;
+  display: flex;
+  padding: 16px;
+  background-color: $white;
+  gap: 40px;
+
+  .leftBlock {
+    width: 57.5%;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+
+    .label {
+      width: 25.6%;
+      background: $greyDivider;
+      padding: 8px 16px;
+      @include button-text;
+      font-family: GteestiProDisplayLight, sans-serif;
+      border-radius: 8px;
+    }
+
+    .title {
+      margin-top: 24px;
+      @include card-title;
+      font-size: 28px;
+      line-height: 33.6px;
+    }
+
+    .text {
+      margin-top: 16px;
+      @include card-text;
+      font-size: 16px;
+      line-height: 22.4px;
+    }
+    .title, .text {
+      width: 71.6%;
+    }
+
+    .moreButton {
+      width: 32%;
+      margin-top: auto;
+      @include button-text;
+      color: $white;
+    }
+  }
+
+  .imgBlock {
+      width: 42.5%;
+    border-radius: 16px;
+  }
+}

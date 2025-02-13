@@ -1,0 +1,94 @@
+.mainPage {
+  padding: 0 13.75%;
+  background: $greyBackground;
+  box-sizing: border-box;
+
+  .searchBlock {
+    margin-top: 40px;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 32px;
+
+    .leftSide {
+      width: 71%;
+      max-width: 992px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+
+      .cardContainer {
+        width: calc(50% - 16px);
+      }
+
+      .moreButton {
+        width: 100%;
+        .showMore {
+          width: 288px;
+          margin: 48px auto 0;
+          font-size: 20px;
+          line-height: 28px;
+          padding: 10px;
+          text-align: center;
+        }
+      }
+    }
+
+    .sideBarSide {
+      width: 27%;
+
+      .sideBar {
+        background: $white;
+        border-radius: 16px;
+        padding: 20px 0;
+
+        .categoryItemTitle {
+          background: $greyBG;
+          border-radius: 12px;
+        }
+
+        .topTitleStyle {
+          color: $brandPrimary;
+        }
+
+        .itemsBlock {
+          margin-top: 8px;
+        }
+
+        .categoryName {
+          margin: 8px 0 0 24px;
+          font-family: HelveticaNeueRoman, Helvetica, Arial, sans-serif;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 27.12px;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1920px) {
+    width: 1920px;
+    margin: 0 auto;
+    padding: 0 264px;
+    .content {
+
+      .leftSide {
+        width: 992px;
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+
+        .cardContainer {
+          width: calc(50% - 12px);
+        }
+      }
+
+      .sideBarSide {
+        width: 27%;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.articleBanner {
+  display: flex;
+  padding: 8px;
+  background-color: $white;
+  border-radius: 16px;
+  gap: 24px;
+
+  .bannerImg {
+    width: calc(62.13% - 16px);
+    border-radius: 16px;
+  }
+
+  .textBlock {
+    padding: 12px 0;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      @include card-title;
+      font-size: 28px;
+      line-height: 34.72px;
+    }
+
+    .text {
+      margin-top: 12px;
+      @include card-text;
+      font-size: 16px;
+      line-height: 22.4px;
+    }
+
+    .readLink {
+      display: block;
+      margin-top: auto;
+      font-size: 18px;
+    }
+  }
+}

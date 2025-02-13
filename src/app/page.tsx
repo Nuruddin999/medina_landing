@@ -58,7 +58,6 @@ export default function Home() {
 
                 </div>
             </div>
-            {/*<Button className={styles.showMore}>Показать еще</Button>*/}
         </div>
     );
 }

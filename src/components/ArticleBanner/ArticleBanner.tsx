@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ArticleBanner.module.scss";
+import styles from "./articleBanner.module.scss";
 import Image from "next/image";
 import Link from "@/components/Link/Link";
 

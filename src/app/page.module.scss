@@ -1,5 +1,5 @@
 .mainPage {
-  padding: 0 13.75%;
+  padding-top: 0;
   background: $greyBackground;
   box-sizing: border-box;
 
@@ -39,6 +39,7 @@
 
     .sideBarSide {
       width: 27%;
+      max-width: 376px;
 
       .sideBar {
         background: $white;
@@ -69,12 +70,14 @@
     }
   }
 
-  @media screen and (min-width: 1920px) {
-    width: 1920px;
-    margin: 0 auto;
-    padding: 0 264px;
+  @media screen and (min-width: 1384px)  {
+    .searchBlock {
+      width: 1384px;
+      margin: 32px auto 0;
+    }
     .content {
-
+      width: 1384px;
+      margin: 32px auto 0;
       .leftSide {
         width: 992px;
         display: flex;
@@ -87,7 +90,7 @@
       }
 
       .sideBarSide {
-        width: 27%;
+        width: 376px;
       }
     }
   }

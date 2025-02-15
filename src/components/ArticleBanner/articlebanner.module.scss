@@ -17,21 +17,21 @@
 
     .title {
       @include card-title;
-      font-size: 28px;
+      font-size: 1.75rem;
       line-height: 34.72px;
     }
 
     .text {
       margin-top: 12px;
       @include card-text;
-      font-size: 16px;
+      font-size: 1rem;
       line-height: 22.4px;
     }
 
     .readLink {
       display: block;
       margin-top: auto;
-      font-size: 18px;
+      font-size: 1.125rem;
     }
   }
 }

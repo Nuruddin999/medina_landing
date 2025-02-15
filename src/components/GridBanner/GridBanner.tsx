@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./gridBanner.module.scss";
+import styles from "./gridbanner.module.scss";
 import Image from "next/image";
 import Button from "@/components/Button/Button";
 

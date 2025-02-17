@@ -5,8 +5,7 @@ background: $white;
     @include centered;
     display: flex;
     align-items: initial;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding: 48px 24px;
     gap: 0 72px;
 
     .about {
@@ -69,10 +68,8 @@ background: $white;
   }
   @media screen and (min-width: 1920px) {
     .footerWrapper {
-      width: 1920px;
-      padding-right: 264px;
-      padding-left: 264px;
-      margin: 0 auto;
+      width: 1384px;
+      margin: 0 auto 0;
     }
   }
 }

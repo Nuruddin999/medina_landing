@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
     return (<footer className={styles.footer}>
         <div className={styles.footerWrapper}>
             <div className={styles.about}>
-                <Image src={'/Logo.png'} alt={'logo'} width={96} height={88} className={styles.footerLogo}/>
+                <Image src={'/Logo.svg'} alt={'logo'} width={96} height={88} className={styles.footerLogo}/>
                 <div>
                     © 2023, Академия Медина
                 </div>

@@ -8,7 +8,7 @@ const Header: React.FC = () => {
     return (<header className={styles.header}>
         <div className={styles.mainWrapper}>
             <div className={styles.logo}>
-                <Image src={'/Logo.png'} alt={''} width={64} height={56}/>
+                <Image src={'/Logo.svg'} alt={''} width={64} height={56}/>
             </div>
             <div className={styles.menuItems}>
                 <a href="/">Академия</a>

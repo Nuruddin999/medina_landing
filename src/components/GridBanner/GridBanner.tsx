@@ -9,8 +9,8 @@ const GridBanner: React.FC<any> = ({title,text, labelText,imgUrl}) => {
             <div className={styles.label}>
                 {labelText}
             </div>
-            <div className={styles.title}>{title}</div>
-            <div className={styles.text}>{text}</div>
+            <div className={styles.title}><span>{title}</span></div>
+            <div className={styles.text}><span>{text}</span></div>
             <Button className={styles.moreButton}>Узнать подробнее</Button>
         </div>
         <Image src={imgUrl || '/'} alt={'banner image'} width={0} height={332} className={styles.imgBlock} />

@@ -14,7 +14,7 @@
   .imgSide {
     background-image: url("/testbackground.png");
     height: 212px;
-    background-size: 100% 100%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     @include radiusBorders;
@@ -31,6 +31,7 @@
   .description {
     margin: 8px 0 16px 0;
     @include card-text;
+    opacity: 60%;
     font-size: 1rem;
     line-height: 20.48px;
   }

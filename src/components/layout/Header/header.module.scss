@@ -4,6 +4,7 @@
 
   .mainWrapper {
   @include centered;
+    padding: 16px 24px;
 
     .logo {
       .logoTitle {
@@ -44,11 +45,10 @@
     }
   }
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1384px) {
     .mainWrapper {
-      width: 1920px;
-      padding: 16px 264px;
-      margin: 0 auto;
+      width: 1384px;
+      margin: 0 auto 0;
     }
   }
 }

@@ -6,7 +6,7 @@ background: $white;
     display: flex;
     align-items: initial;
     padding: 48px 24px;
-    gap: 0 72px;
+    justify-content: space-between;
 
     .about {
       font-family: HelveticaNeueLight, sans-serif;

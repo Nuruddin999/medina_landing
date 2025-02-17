@@ -48,8 +48,10 @@
         padding: 20px 0;
 
         .categoryItemTitle {
-          background: $greyBG;
           border-radius: 12px;
+          &:hover {
+            background: $greyBG;
+          }
         }
 
         .topTitleStyle {
@@ -65,12 +67,16 @@
         }
 
         .categoryName {
-          margin: 8px 0 0 24px;
+          margin: 8px 24px 0 24px;
           font-family: HelveticaNeueRoman, Helvetica, Arial, sans-serif;
           font-size: 1.125rem;
           font-weight: 400;
           line-height: 27.72px;
           opacity: 80%;
+          cursor: pointer;
+          &:hover {
+            background: $greyBG;
+          }
         }
       }
     }

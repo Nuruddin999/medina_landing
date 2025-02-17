@@ -49,6 +49,7 @@
 
         .categoryItemTitle {
           border-radius: 12px;
+          cursor: pointer;
           &:hover {
             background: $greyBG;
           }

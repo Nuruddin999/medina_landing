@@ -1,12 +1,12 @@
 .gridBanner {
-  width: 116%;
   display: flex;
   padding: 16px;
   background-color: $white;
-  gap: 40px;
+  border-radius: 16px;
+  justify-content: space-between;
 
   .leftBlock {
-    width: 57.5%;
+    width: 42.3%;
     margin: 8px;
     display: flex;
     flex-direction: column;
@@ -47,7 +47,21 @@
   }
 
   .imgBlock {
-      width: 42.5%;
+    width: 49.6%;
     border-radius: 16px;
+  }
+
+  @media screen and (min-width: 1384px) {
+    .gridBanner {
+      width: 100%;
+      .imgBlock {
+        width: 492px;
+        height: 332px;
+      }
+
+      .leftBlock {
+        width: 420px;
+      }
+    }
   }
 }

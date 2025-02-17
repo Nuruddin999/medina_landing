@@ -21,11 +21,12 @@
       flex-wrap: wrap;
 
       .cardContainer {
-        width: calc(50% - 16px);
+        width: calc(50% - 8px);
       }
 
       .moreButton {
         width: 100%;
+
         .showMore {
           width: 288px;
           margin: 48px auto 0;
@@ -55,6 +56,10 @@
           color: $brandPrimary;
         }
 
+        .topTitleItemStyle {
+          opacity: 80%;
+        }
+
         .itemsBlock {
           margin-top: 8px;
         }
@@ -65,12 +70,13 @@
           font-size: 1.125rem;
           font-weight: 400;
           line-height: 27.12px;
+          opacity: 80%;
         }
       }
     }
   }
 
-  @media screen and (min-width: 1384px)  {
+  @media screen and (min-width: 1384px) {
     .searchBlock {
       width: 1384px;
       margin: 32px auto 0;
@@ -85,7 +91,7 @@
         flex-wrap: wrap;
 
         .cardContainer {
-          width: calc(50% - 12px);
+          width: calc(50% - 8px);
         }
       }
 

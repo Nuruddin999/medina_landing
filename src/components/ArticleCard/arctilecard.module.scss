@@ -25,6 +25,7 @@
   margin: 12px 20px 0;
   .title {
     @include card-title;
+    opacity: 80%;
     font-size: 1.5rem;
     line-height: 26.88px;
   }
@@ -32,7 +33,6 @@
   .description {
     margin: 8px 0 16px 0;
     @include card-text;
-    opacity: 60%;
     font-size: 1rem;
     line-height: 20.48px;
   }

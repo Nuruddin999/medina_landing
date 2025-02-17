@@ -1,11 +1,13 @@
 @mixin card-title {
   font-family: GteestiProDisplayMedium, sans-serif;
   color: $mainText;
+  opacity: 90%;
 }
 
 @mixin card-text {
   font-family: HelveticaNeueRoman, sans-serif;
   color: $description;
+  opacity: 60%;
 }
 
 @mixin button-text{

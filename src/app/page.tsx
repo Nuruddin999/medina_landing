@@ -46,7 +46,12 @@ export default function Home() {
                         <div className={styles.itemsBlock}>
                             {mockSidebarGroup.map((item) =>
                                 <div>
-                                    <CategoryTitle item={item} key={item.title} icon={'/arabic.svg'}/>
+                                    <CategoryTitle
+                                        item={item}
+                                        key={item.title}
+                                        icon={'/arabic.svg'}
+                                        className={styles.categoryItemTitle}
+                                    topTitleStyle={styles.topTitleItemStyle}/>
                                     {item.categories.map((itemCategory, index) =>
                                         <div key={itemCategory + index} className={styles.categoryName}>
                                             {itemCategory}

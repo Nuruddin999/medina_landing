@@ -4,4 +4,9 @@
   line-height: 19.84px;
   color: $brandPrimary;
   cursor: pointer;
+
+  @media screen and (max-width: 1023px) {
+    font-size: 1.125rem;
+    line-height: 22.32px;
+  }
 }

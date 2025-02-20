@@ -36,6 +36,38 @@
       font-size: 1.125rem;
     }
   }
+
+  @media screen and (max-width: 1023px) {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-bottom: 20px;
+    .textBlock {
+      width: 100%;
+      padding: 0 8px;
+
+      .title {
+        @include card-title-mob;
+      }
+
+      .text {
+        margin-top: 4px;
+        line-height: 20.48px;
+        opacity: 60%;
+        color: $mainText;
+      }
+
+      .readLink {
+        line-height: 22.32px;
+        margin-top: 16px;
+      }
+    }
+    .bannerImg {
+      width: 100%;
+      height: auto;
+    }
+  }
+
   @media screen and (min-width: 1384px) {
     .bannerImg {
       width: 588px;

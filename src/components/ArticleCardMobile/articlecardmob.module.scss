@@ -1,0 +1,46 @@
+.cardMob {
+  width: 100%;
+  border-radius: 12px;
+  background: linear-gradient(rgba(49, 219, 176, 1), rgba(28, 160, 128, 1));
+  box-shadow: 0px 8px rgba(41, 41, 41, 0.04);
+  padding: 24px 16px 20px;
+
+  .title {
+    font-family: GteestiProDisplayMedium, sans-serif;
+    font-size: 1.5rem;
+    line-height: 25.92px;
+    color: $white;
+    margin-top: 16px;
+  }
+
+  .imgContainer {
+    width: 100%;
+    border: 4px solid $white;
+    border-radius: 4px;
+    margin-top: 16px;
+
+    .img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+  }
+
+  .descriptionMob {
+    margin-top: 8px;
+    font-family: GteestiProDisplay, sans-serif;
+    font-size: 1rem;
+    line-height: 22.4px;
+    color: $white;
+  }
+
+  .moremob {
+    margin-top: 24px;
+    background: $white;
+    text-align: center;
+    color: $brandPrimary;
+    @include button-text;
+    padding: 10px 0;
+  }
+}
+

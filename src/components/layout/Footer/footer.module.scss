@@ -66,6 +66,18 @@ background: $white;
       }
     }
   }
+  @media screen and (max-width: 1023px) {
+    .footerWrapper {
+      width: 100%;
+      margin: 0 auto 0;
+      flex-wrap: wrap;
+
+      .academy, .social {
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+  }
   @media screen and (min-width: 1920px) {
     .footerWrapper {
       width: 1384px;

@@ -1,0 +1,9 @@
+.label {
+  width: 150px;
+  background: $greyDivider;
+  padding: 8px 16px;
+  @include button-text;
+  font-family: GteestiProDisplayLight, sans-serif;
+  border-radius: 8px;
+  color: $mainText
+}

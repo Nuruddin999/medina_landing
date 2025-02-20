@@ -83,6 +83,25 @@
     }
   }
 
+  @media screen and (max-width: 1023px) {
+    padding: 0px;
+      .content {
+        flex-wrap: wrap;
+        .leftSide {
+          width: 100%;
+          padding: 0 8px;
+
+          .cardContainer {
+            width: 100%;
+          }
+        }
+        .sideBarSide {
+          width: 100%;
+          max-width: initial;
+        }
+      }
+  }
+
   @media screen and (min-width: 1384px) {
     .searchBlock {
       width: 1384px;
